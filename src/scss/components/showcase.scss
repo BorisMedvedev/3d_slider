@@ -1,0 +1,100 @@
+.showcase {
+  position: relative;
+  height: 100%;
+  background-color: $black;
+  color: $white;
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    box-shadow: inset 0 0 600px #000;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/public/images/light.png');
+    background-repeat: no-repeat;
+    background-position: center -65px;
+    background-size: cover;
+    animation: k-light 3s ease-in-out infinite;
+  }
+}
+
+.showcase__wrapper {
+  padding: $padding 0;
+  position: relative;
+  height: 100%;
+  z-index: 5;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/public/images/glow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: k-glow 1.5s ease-in-out infinite;
+
+  }
+}
+
+.showcase__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+}
+
+.showcase__title {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 6;
+  top: 40px;
+  font-size: 36px;
+
+  span {
+    color: $chilean-fire;
+  }
+}
+
+@keyframes k-light {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.2;
+  }
+
+}
+@keyframes k-glow {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.6;
+  }
+
+}
