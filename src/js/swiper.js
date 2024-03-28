@@ -11,12 +11,10 @@ Swiper.use([
 ]);
 
 const swiperIMG = new Swiper('.showcase__swiper', {
-  loop: false,
+  loop: true,
   slidesPerView: 3,
   speed: 2000,
-  pagination: {
-    el: '.slider-pagination-count',
-  },
+  
 });
 
 document.querySelector('.showcase__video').playbackRate = 3;
