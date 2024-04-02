@@ -8,36 +8,3 @@
 
 
 
-
-
-[href="#linkDescr"] {
-  display: none;
-}
-
-[href="#nolimProductNameLink"] {
-  pointer-events: none;
-}
-
-[data-tooltip-hook="#popup:nal"] {
-  z-index: 999999999;
-}
-
-.t-store__prod-popup__btn_disabled:not(.t-store__prod__quantity) {
-  display: none !important;
-}
-
-.transDurOff {
-  -webkit-transition-duration: 0s !important;
-  -moz-transition-duration: 0s !important;
-  -o-transition-duration: 0s !important;
-  transition-duration: 0s !important;
-}
-
-.t-product__option-item_disabled-nlm038 {
-  opacity: 50%;
-}
-
-.wbtn>a {
-  margin-bottom: 0px !important;
-  width: 100%;
-}
